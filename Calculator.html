@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Converter</title>
+</head>
+<body>
+    <header>
+        <h1>Length Converter</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Conversion.html">Conversion</a></li>
+            <li><a href="Calculator.html">Calculator</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Length Converter</h2>
+            <p>This calculator will helps you convert lengths between different units.</p>
+
+            <form id="conversionForm">
+                <label for="inputValue">Enter length:</label>
+                <input type="text" id="inputValue" placeholder="Enter length" required>
+
+                <label for="unitFrom">From:</label>
+				<select id="unitFrom">
+					<option value="meters">Meters</option>
+					<option value="kilometers">Kilometers</option>
+					<option value="centimeters">Centimeters</option>
+					<option value="millimeters">Millimeters</option>
+					<option value="decimeters">Decimeters</option> 
+					<option value="hectometers">Hectometers</option>
+					<option value="inches">Inches</option> 
+					<option value="feet">Feet</option>
+					<option value="yards">Yards</option>
+					<option value="miles">Miles</option>
+				</select>
+
+				<label for="unitTo">To:</label>
+				<select id="unitTo">
+					<option value="meters">Meters</option>
+					<option value="kilometers">Kilometers</option>
+					<option value="centimeters">Centimeters</option>
+					<option value="millimeters">Millimeters</option>
+					<option value="decimeters">Decimeters</option> 
+					<option value="hectometers">Hectometers</option> 
+					<option value="inches">Inches</option> 
+					<option value="feet">Feet</option>
+					<option value="yards">Yards</option>
+					<option value="miles">Miles</option>
+				</select>
+
+
+                <button type="button" onclick="calculate()">Convert</button>
+            </form>
+
+            <p id="result">Result: </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Created by Balqis. All rights reserved.</p>
+    </footer>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
+
